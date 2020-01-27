@@ -1,3 +1,21 @@
+# nsfw 鉴别
+### 居于雅虎开源的yashoo/nfsw模型封装
+### docker 执行
+```shell script
+ docker run -p 5000:5000 yahoo_jh
+```
+### 接口地址，利用表单直接提交图片文件，name=file
+```shell script
+/yahoo_nsfw/classify
+```
+### 返回值
+```json
+{
+    "data": 0.43121808767318726,
+    "message": "success",
+    "status": 1
+}
+```
 # Open nsfw model
 This repo contains code for running Not Suitable for Work (NSFW) classification deep neural network Caffe models. Please refer our [blog](https://yahooeng.tumblr.com/post/151148689421/open-sourcing-a-deep-learning-solution-for) post which describes this work and experiments in more detail.
 
